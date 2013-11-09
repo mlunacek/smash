@@ -14,12 +14,4 @@ Examples
 
 Check out the [notebook](http://nbviewer.ipython.org/urls/raw.github.com/mlunacek/smash/master/smash/examples/notebook_examples.ipynb) example. 
 
-One installed, you should be able to execute the examples.  The `examples.py` script will produce four webpages:
-
-### Collide
-
-### Scatter
-
-### Parallel Coordinates
-
-<iframe src="https://raw.github.com/mlunacek/smash/master/smash/examples/smash_cars_parallel_.html" width=600 height=300></iframe>
+One installed, you should be able to execute the examples.  The `examples.py` script will produce four webpages.
