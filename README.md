@@ -12,11 +12,12 @@ This is not a D3 chart package.  For that I would check out:
 Examples
 ----------
 
+Check out the [notebook](http://nbviewer.ipython.org/urls/raw.github.com/mlunacek/smash/master/smash/examples/notebook_examples.ipynb) example. 
+
 One installed, you should be able to execute the examples.  The `examples.py` script will produce four webpages:
 
-- smash_collide_.html
-- smash_cars_scatter_.html
-- smash_cars_parallel_.html
-- smash_iris_parallel_.html
+### Collide
 
-Check out the [notebook]() example. 
+### Scatter
+
+### Parallel Coordinates
