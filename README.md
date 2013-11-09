@@ -21,3 +21,5 @@ One installed, you should be able to execute the examples.  The `examples.py` sc
 ### Scatter
 
 ### Parallel Coordinates
+
+<iframe src="https://raw.github.com/mlunacek/smash/master/smash/examples/smash_cars_parallel_.html" width=600 height=300></iframe>
