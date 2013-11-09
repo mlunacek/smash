@@ -32,7 +32,8 @@ class SmashBase:
 			self._show_static(output)
 
 	def create(self):
-		output = self._template() 
+		self.default_vars['extend'] = True
+		output = self._template()
 		self._show_iframe(output)
 
 	def _show_static(self, output):
