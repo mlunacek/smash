@@ -1,5 +1,9 @@
-{%- if extend -%}{% extends "base.html" %}{% endif %}
+{% if standalone %}
+{% extends 'base.tpl' %}
+{% endif %}
 {% block content %}
+<div id="graph_{{id}}"></div>
+
 <style type="text/css">
 svg {
   font: 10px sans-serif;
@@ -35,11 +39,9 @@ svg {
   cursor: move;
 }
 </style>
-<div id="vis{{id}}"></div>
-<script src="http://d3js.org/d3.v2.min.js"></script>
-<!--     // <script type="text/javascript" src="http://mbostock.github.com/d3/d3.js?2.5.0"></script>
-    // <script type="text/javascript" src="http://mbostock.github.com/d3/d3.csv.js?2.5.0"></script> -->
-    <script type="text/javascript">
+
+<script type="text/javascript">
+graph_{{id}} = function(){
 
 var m = [30, 10, 10, 10],
     w = {{width}} - m[1] - m[3],
@@ -54,7 +56,7 @@ var line = d3.svg.line(),
     background,
     foreground;
 
-var svg = d3.select("#vis{{id}}").append("svg:svg")
+var svg = d3.select("#graph_{{id}}").append("svg:svg")
     .attr("width", w + m[1] + m[3])
     .attr("height", h + m[0] + m[2])
   .append("svg:g")
@@ -158,6 +160,11 @@ function brush() {
     }) ? null : "none";
   });
 }
+
+}
+
+{% include "load_d3.tpl" %}
+
 
 </script>
 {% endblock %}
